@@ -17,7 +17,7 @@ Solution is separated into small parts:
 - Calculating Shortest Distance
 ```
 
-I have implemented ```Strategy``` design pattern for data input and for distance optimizer algorithms. It helped me to change application behaviour without adding too much code. I have created several contracts for data reading and calculating shortest distance. So we can easily implement defined interfaces and change our solution behaviour.
+I have implemented ```Strategy``` design pattern for data input and for distance optimizer algorithms. It helped me to change application's behaviour without adding too much code. I have created several contracts for data reading and calculating shortest distance. So we can easily implement defined interfaces and change our solution's behaviour.
 
 Below I describe application structure in details:
 
@@ -39,7 +39,7 @@ Otherwise you can download the whole project folder as .zip file from github pag
 
 ### Prerequisites
 ```
-Java 8
+Java 8+
 Apache Maven 4+
 Junit 4+
 ```
@@ -48,7 +48,7 @@ Junit 4+
 mvn clean install
 ```
 ### Running the tests
-Solution fully unit tested. In order to run the tests following command should be used:
+Solution is fully unit tested. In order to run the tests following command should be used:
 ```
 mvn test
 ```

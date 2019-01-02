@@ -26,7 +26,7 @@ public class DistanceOptimizerTest {
 
     @Test
     public void testShortDistanceGH() {
-        assertEquals(12d, optimizer.computeShortestDistance("g", "h"), 0.00001d);
+        assertEquals(11d, optimizer.computeShortestDistance("g", "h"), 0.00001d);
     }
 
     @Test
