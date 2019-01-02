@@ -2,7 +2,7 @@
 
 Distance optimizer challenge is a classic example of [Shortest Path](https://en.wikipedia.org/wiki/Shortest_path_problem) problem.
 
-There are many algorithms for solving Shortest Path problem. As a default solution I used a [Dijkstra Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) for solving this problem. The main disadvantage of this algorithm is that it does not calculate shortest path if there exist negative distance. For negative distances we could use [Bellman-Ford Algorithm](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm) which also have limitations(can't work if there exist negative cycle). My approach allows to switch between algorithms easily by adding new implementations and modifying property file accordingly.
+There are many algorithms for solving Shortest Path problem. As a default solution I used a [Dijkstra Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) for solving this problem. The main disadvantage of this algorithm is that it does not calculate shortest path if there exist negative distance or cycle. For negative distances we could use [Bellman-Ford Algorithm](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm) which also have limitations(can't work if there exist negative cycle). My approach allows to switch between algorithms easily by adding new implementations and modifying property file accordingly.
 
 ## Getting Started
 
