@@ -5,6 +5,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * The class represents a node in the graph
+ */
 public class Node {
     private String name;
 
