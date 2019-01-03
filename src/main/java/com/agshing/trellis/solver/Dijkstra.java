@@ -19,7 +19,7 @@ public class Dijkstra implements ShortestPath {
     /**
      * This method is used to calculate shortest distance between nodes via Dijkstra algorithm
      * @param from source node
-     * @oaram to destination node
+     * @param to destination node
      * @return shortest distance between source and destination
      */
     @Override
@@ -46,16 +46,14 @@ public class Dijkstra implements ShortestPath {
     }
 
     /**
-     * This method is used to ad connection between nodes
-     * @param from source node
-     * @oaram to destination node
-     * @oaram distance between nodes
-     * @oaram isBidirectional shows if connection must be bidirectional
+     * This method is used to get graph
+     * @return graph assigned to algorithm
      */
     @Override
-    public void addConnection(String from, String to, Double distance, boolean isBidirectional) {
-        DataUtils.addEdge(graph, from, to, distance, isBidirectional);
+    public Graph getGraph() {
+        return graph;
     }
+
 
     private void calculateMinimumDistance(Node evaluationNode, Double distance, Node sourceNode) {
         Double sourceDistance = sourceNode.getDistance();

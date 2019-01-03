@@ -1,13 +1,15 @@
 package com.agshing.trellis.solver;
 
+import com.agshing.trellis.solver.helper.Graph;
+
 public class BellmanFord implements ShortestPath {
     @Override
     public Double calculateShortestPathFromSource(String from, String to) {
-        return null;
+        throw new UnsupportedOperationException("This method has not been implemented yet");
     }
 
     @Override
-    public void addConnection(String from, String to, Double distance, boolean isBidirectional) {
-
+    public Graph getGraph(){
+        throw new UnsupportedOperationException("This method has not been implemented yet");
     }
 }

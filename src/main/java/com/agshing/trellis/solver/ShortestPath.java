@@ -1,6 +1,8 @@
 package com.agshing.trellis.solver;
 
+import com.agshing.trellis.solver.helper.Graph;
+
 public interface ShortestPath {
     Double calculateShortestPathFromSource(String from, String to);
-    void addConnection(String from, String to, Double distance, boolean isBidirectional);
+    Graph getGraph();
 }
