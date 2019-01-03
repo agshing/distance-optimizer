@@ -13,7 +13,7 @@ public class Graph {
         nodesMap.put(node.getName(), node);
     }
 
-    public Node getNodeByName(String name){
+    public Node getNodeByName(String name) {
         return nodesMap.get(name);
     }
 }

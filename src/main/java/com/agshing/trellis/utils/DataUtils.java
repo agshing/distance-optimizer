@@ -21,10 +21,10 @@ public class DataUtils {
      * @param dataReader list of String
      * @return graph representation of read data
      */
-    public static Graph buildGraph(DataReader dataReader){
+    public static Graph buildGraph(DataReader dataReader) {
         Graph graph = new Graph();
         List<String> data = dataReader.read();
-        for(String s : data){
+        for (String s : data) {
             String[] metaData = s.split(DELIMITER);
             String from = metaData[0];
             String to = metaData[1];
@@ -38,27 +38,27 @@ public class DataUtils {
     /**
      * This method is used to add connection between nodes
      *
-     * @param graph graph representation
-     * @param from first node
-     * @param to second node
-     * @param distance value between nodes
+     * @param graph           graph representation
+     * @param from            first node
+     * @param to              second node
+     * @param distance        value between nodes
      * @param isBidirectional shows if connection must be bidirectional
      */
-    public static void addEdge(Graph graph, String from, String to, Double distance, boolean isBidirectional){
+    public static void addEdge(Graph graph, String from, String to, Double distance, boolean isBidirectional) {
         Node nodeFrom = graph.getNodeByName(from);
-        if(nodeFrom == null){
+        if (nodeFrom == null) {
             nodeFrom = new Node(from);
             graph.addNode(nodeFrom);
         }
         Node nodeTo = graph.getNodeByName(to);
-        if(nodeTo == null){
+        if (nodeTo == null) {
             nodeTo = new Node(to);
             graph.addNode(nodeTo);
         }
-        if(isBidirectional){
+        if (isBidirectional) {
             nodeFrom.addDestination(nodeTo, distance);
             nodeTo.addDestination(nodeFrom, distance);
-        }else{
+        } else {
             nodeFrom.addDestination(nodeTo, distance);
         }
     }

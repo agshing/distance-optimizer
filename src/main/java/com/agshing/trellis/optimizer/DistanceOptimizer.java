@@ -9,15 +9,16 @@ import com.agshing.trellis.utils.DataUtils;
 public class DistanceOptimizer implements IDistanceOptimizer {
     private ShortestPath solver;
 
-    public DistanceOptimizer(ShortestPath algorithm){
+    public DistanceOptimizer(ShortestPath algorithm) {
         this.solver = algorithm;
     }
 
     /**
      * This method is used to add connection between nodes
-     * @param from source node
-     * @param to destination node
-     * @param distance between nodes
+     *
+     * @param from            source node
+     * @param to              destination node
+     * @param distance        between nodes
      * @param isBidirectional shows if connection must be bidirectional
      */
     @Override
@@ -27,8 +28,9 @@ public class DistanceOptimizer implements IDistanceOptimizer {
 
     /**
      * This method is used to calculate shortest distance between nodes by specified algorithm
+     *
      * @param start source node
-     * @param end destination node
+     * @param end   destination node
      * @return shortest distance between source and destination
      */
     @Override

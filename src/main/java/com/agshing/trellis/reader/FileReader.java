@@ -24,16 +24,16 @@ public class FileReader implements DataReader {
      * @return list of lines that contains graph data
      */
     @Override
-    public List<String> read(){
+    public List<String> read() {
         return readFile();
     }
 
-    private List<String> readFile(){
+    private List<String> readFile() {
         List<String> data = null;
         try {
             final File file = new File(filePath);
             data = Files.readAllLines(file.toPath());
-        }catch (IOException iox){
+        } catch (IOException iox) {
             logger.log(Level.SEVERE, "Could not parse data. Application will stop immediately.", iox);
             System.exit(0);
         }

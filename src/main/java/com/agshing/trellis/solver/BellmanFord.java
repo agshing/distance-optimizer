@@ -9,7 +9,7 @@ public class BellmanFord implements ShortestPath {
     }
 
     @Override
-    public Graph getGraph(){
+    public Graph getGraph() {
         throw new UnsupportedOperationException("This method has not been implemented yet");
     }
 }

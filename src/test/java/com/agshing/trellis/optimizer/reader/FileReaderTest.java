@@ -23,7 +23,7 @@ public class FileReaderTest {
     }
 
     @Test
-    public void testRead(){
+    public void testRead() {
         // when
         final List<String> lines = underTest.read();
         // then

@@ -4,7 +4,7 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class ConfigManager{
+public class ConfigManager {
     private static final Logger logger = Logger.getLogger(ConfigManager.class.getName());
     public static String READER;
     public static String SOLVER;

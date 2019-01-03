@@ -4,6 +4,7 @@ import com.agshing.trellis.reader.DataReader;
 import com.agshing.trellis.solver.helper.Graph;
 import com.agshing.trellis.solver.helper.Node;
 import com.agshing.trellis.utils.DataUtils;
+
 import java.util.*;
 
 /*
@@ -12,14 +13,15 @@ import java.util.*;
 public class Dijkstra implements ShortestPath {
     private Graph graph;
 
-    public Dijkstra(DataReader reader){
+    public Dijkstra(DataReader reader) {
         this.graph = DataUtils.buildGraph(reader);
     }
 
     /**
      * This method is used to calculate shortest distance between nodes via Dijkstra algorithm
+     *
      * @param from source node
-     * @param to destination node
+     * @param to   destination node
      * @return shortest distance between source and destination
      */
     @Override
@@ -47,6 +49,7 @@ public class Dijkstra implements ShortestPath {
 
     /**
      * This method is used to get graph
+     *
      * @return graph assigned to algorithm
      */
     @Override
